@@ -1,0 +1,37 @@
+
+import java.util.Scanner;
+
+
+public class Student {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Nhap ho va ten:");
+        String name = keyboard.nextLine();
+        
+        System.out.println("Nhap tuoi:");
+        int age = keyboard.nextInt();
+        
+        System.out.println("Nhap nam sinh:");
+        int year = keyboard.nextInt();
+        
+        System.out.println("Nhap gioi tinh:");
+        keyboard.nextLine();
+        String sex = keyboard.nextLine();
+        
+        System.out.println("Nhap chuyen nganh:");
+        String major = keyboard.nextLine();
+        
+        System.out.println("Nhap GPA:");
+        float GPA = keyboard.nextFloat();
+        keyboard.nextLine();
+        System.out.println("Nhap que quan:");
+        String hometown = keyboard.nextLine();
+        System.out.println("Ten:" + name);
+        System.out.println("Tuoi:" + age);
+        System.out.println("Nam sinh:" + year);
+        System.out.println("Gioi tinh:" + sex);
+        System.out.println("Chuyen nganh:" + major);
+        System.out.println("GPA:" + GPA);
+        System.out.println("Que quan:" + hometown);
+    }
+}

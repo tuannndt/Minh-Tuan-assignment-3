@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+
+public class integer {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter a integer:");
+        
+        if(keyboard.hasNextInt()) {
+            int integer = keyboard.nextInt();
+            System.out.println("Integer:" + integer);
+        }
+        else {
+            System.out.println("Not an integer.");
+        }
+    }
+}

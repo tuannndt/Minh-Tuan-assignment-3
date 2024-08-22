@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+
+
+public class string {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        
+        if(keyboard.hasNext("[a-zA-Z]+")) {
+            String input = keyboard.nextLine(); 
+            System.out.println("string: " + input);
+        }
+        else {
+            System.out.println("These are no string.");
+        }
+    }
+}
